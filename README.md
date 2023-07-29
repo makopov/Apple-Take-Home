@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Weather forecast app for an Apple job application
 
-Things you may want to cover:
 
+### Requirements
 * Ruby version
-
-* System dependencies
+  * Ruby 3.2.0 is required
 
 * Configuration
+  * Be sure to enable rails cache `rails dev:cache`
 
-* Database creation
-
-* Database initialization
+* Database
+  * Not needed
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Running the app
+  * Run `rails s` in the project directory
 
-* Deployment instructions
 
-* ...
+### Notes
+- I left my API key for OpenWeatherData in the .env file as a way to make it easy for you to run, idealy though this should just be stored in a `.env.local` file.
+

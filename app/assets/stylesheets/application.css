@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+html, body {
+    height: 100%;
+}
+
+.custom-border-radius {
+    border-radius: 55px;
+}
+  
+.custom-padding {
+    padding: 30px;
+}

@@ -1,0 +1,29 @@
+<div class="container h-100 d-flex justify-content-center align-items-center">
+  <div class="col-4">
+    <h1 class="text-center mb-4">Enter Your Address</h1>
+
+    <%= form_with url: weather_index_path, method: :post, local: true do |form| %>
+      <div class="form-group mb-3">
+        <%= label_tag :street_address, "Street Address" %>
+        <%= text_field_tag :street_address, nil, class: "form-control", placeholder: "123 Main St", required: true %>
+      </div>
+
+      <div class="form-group mb-3">
+        <%= label_tag :city, "City" %>
+        <%= text_field_tag :city, nil, class: "form-control", placeholder: "Anytown", required: true %>
+      </div>
+
+      <div class="form-group mb-3">
+        <%= label_tag :state, "State" %>
+        <%= text_field_tag :state, nil, class: "form-control", placeholder: "State", required: true %>
+      </div>
+
+      <div class="form-group mb-3">
+        <%= label_tag :zip, "Zip" %>
+        <%= text_field_tag :zip, nil, class: "form-control", placeholder: "12345", required: true %>
+      </div>
+
+      <%= submit_tag "Get Weather", class: "btn btn-primary btn-block" %>
+    <% end %>
+  </div>
+</div>

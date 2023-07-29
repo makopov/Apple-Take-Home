@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div class="card text-center shadow custom-border-radius bg-white p-5">
+    <div class="card-body">
+      <h1 class="card-title">Weather Report</h1>
+
+      <% if Time.now >= @sunrise && Time.now <= @sunset %>
+        <p>☀️ Daytime</p>
+      <% else %>
+        <p>🌙 Nighttime</p>
+      <% end %>
+
+      <h2 class="card-text">Temperature: <%= @temperature %>°C</h2>
+      <h2 class="card-text">Low: <%= @low %>°C</h2>
+      <h2 class="card-text">High: <%= @high %>°C</h2>
+      <p class="text-center"><%= @cached ? 'This result was fetched from cache.' : 'This result was freshly fetched.' %></p>
+
+      <%= link_to 'Try a different address', new_weather_path, class: 'btn btn-primary mt-4' %>
+    </div>
+  </div>
+</div>
