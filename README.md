@@ -14,9 +14,11 @@
   * Not needed
 
 * How to run the test suite
+  * Run `bundle exec rspec`
 
 * Running the app
   * Run `rails s` in the project directory
+  * Navigate to `localhost:3000` and follow the on screen instructions
 
 
 ### Notes
